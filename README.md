@@ -15,4 +15,4 @@ losowania: od, do, ile [Link do commita 3](https://github.com/bartek-kachnic123/
 Kod: [Link do zadania 1](https://github.com/bartek-kachnic123/oop/tree/main/paradigms)
 
 
-https://github.com/bartek-kachnic123/oop/blob/main/assets/paradigms.zip% 
+https://github.com/bartek-kachnic123/oop/blob/main/assets/paradigms.zip 
