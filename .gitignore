@@ -1,0 +1,4 @@
+paradigms/*
+!paradigms/*.pas
+!paradigms/*.sh
+
