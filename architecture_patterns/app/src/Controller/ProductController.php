@@ -21,6 +21,14 @@ class ProductController extends AbstractController
         return new JsonResponse($data, 200, [], true);
     }
 
+    #[Route('/{id}', methods:['GET'])]
+    public function show(int $id, EntityManagerInterface $em, SerializerInterface $serializer): JsonResponse
+    {
+	$product = $em->getRepository(Product::class)->find($id);
+	if (!$product) return new JsonResponse(['error' => 'Not found'], 404);
+	return new JsonResponse($serializer->serialize($product, 'json'), 200, [], true);
+    }
+
     #[Route('', methods:['POST'])]
     public function create(Request $request, EntityManagerInterface $em, SerializerInterface $serializer): JsonResponse
     {
