@@ -1,38 +1,36 @@
 #!/bin/bash
 
-BASE_URL="http://localhost:8000/api/products"
+BASE_URL="http://localhost:8000/api/client"
 
-echo "=== CREATE ==="
+echo "=== CREATE CLIENT ==="
 CREATE_RESPONSE=$(curl -s -X POST $BASE_URL \
 -H "Content-Type: application/json" \
--d '{"name":"Laptop","price":3999.99,"description":"Gaming laptop"}')
-
+-d '{"name":"Jan Kowalski","email":"jan@example.com"}')
 echo $CREATE_RESPONSE
 echo
 
 ID=$(echo $CREATE_RESPONSE | grep -o '"id":[0-9]*' | grep -o '[0-9]*')
-
-echo "Created ID: $ID"
+echo "Created Client ID: $ID"
 echo
 
-echo "=== GET ALL ==="
+echo "=== GET ALL CLIENTS ==="
 curl -s $BASE_URL
 echo
 echo
 
-echo "=== GET ONE ==="
+echo "=== GET ONE CLIENT ==="
 curl -s $BASE_URL/$ID
 echo
 echo
 
-echo "=== UPDATE ==="
+echo "=== UPDATE CLIENT ==="
 curl -s -X PUT $BASE_URL/$ID \
 -H "Content-Type: application/json" \
--d '{"name":"Laptop 2","price":3499.99,"description":"Updated version"}'
+-d '{"name":"Jan Nowak","email":"jan.nowak@example.com"}'
 echo
 echo
 
-echo "=== DELETE ==="
+echo "=== DELETE CLIENT ==="
 curl -s -X DELETE $BASE_URL/$ID
 echo
 echo
@@ -40,3 +38,4 @@ echo
 echo "=== GET AFTER DELETE ==="
 curl -s $BASE_URL/$ID
 echo
+

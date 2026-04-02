@@ -16,7 +16,9 @@ until curl -s $BASE_URL >/dev/null; do
 done
 
 echo "Server started"
-./app/test/test_api_products.sh
+echo "test product api" && ./app/test/test_product_api.sh
+echo "test client api" && ./app/test/test_client_api.sh
+echo "test order api" && ./app/test/test_order_api.sh
 
 docker stop $CONTAINER_ID
 docker rm $CONTAINER_ID

@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Serializer\SerializerInterface;
 
-#[Route('/api/products')]
+#[Route('/api/product')]
 class ProductController extends AbstractController
 {
     #[Route('', methods:['GET'])]
@@ -65,3 +65,4 @@ class ProductController extends AbstractController
         return new JsonResponse(null, 204);
     }
 }
+
