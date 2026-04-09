@@ -33,3 +33,21 @@ Kod: [Link do zadania 2](https://github.com/bartek-kachnic123/oop/tree/main/arch
 
 https://github.com/bartek-kachnic123/oop/blob/main/assets/architecture_patterns.zip
 
+
+**Zadanie 3** Wzorce kreacyjne Spring Boot (Kotlin)
+
+:white_check_mark: Należy stworzyć jeden kontroler wraz z danymi wyświetlanymi z
+listy na endpoint’cie w formacie JSON - Kotlin + Spring Boot [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/e3a90fd693ce1da36258935db6fba6433ad3bad0)
+
+:white_check_mark: 3.5 Należy stworzyć klasę do autoryzacji (mock) jako Singleton w formie eager [Link do commita2 ](https://github.com/bartek-kachnic123/oop/commit/361f1b9087455f144ca23055e57b3ab132b3be49)
+
+:white_check_mark: 4.0  0 Należy obsłużyć dane autoryzacji przekazywane przez użytkownika [Link do commita 3](https://github.com/bartek-kachnic123/oop/commit/37476b9c4e21e2cbc2fbf2e5d64d1c280758a868)
+
+:white_check_mark: 4.5  Należy wstrzyknąć singleton do głównej klasy via @Autowired lub
+kontruktor (constructor injection) [Link do commita 4](https://github.com/bartek-kachnic123/oop/commit/37476b9c4e21e2cbc2fbf2e5d64d1c280758a868)
+
+Kod: [Link do zadania 3](https://github.com/bartek-kachnic123/oop/tree/main/creational_patterns)
+
+
+https://github.com/bartek-kachnic123/oop/blob/main/assets/creational_patterns.zip
+
