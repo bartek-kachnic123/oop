@@ -51,3 +51,23 @@ Kod: [Link do zadania 3](https://github.com/bartek-kachnic123/oop/tree/main/crea
 
 https://github.com/bartek-kachnic123/oop/blob/main/assets/creational_patterns.zip
 
+
+**Zadanie 4** Wzorce strukturalne Echo (Go)
+
+:white_check_mark: Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
+miała kontroler Pogody, która pozwala na pobieranie danych o pogodzie
+(lub akcjach giełdowych) [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/fe6bf1a8bba4688bee2acbac25980e3d878795ba)
+
+:white_check_mark: Należy stworzyć model Pogoda (lub Giełda) wykorzystując gorm, a
+dane załadować z listy przy uruchomieniu [Link do commita2 ](https://github.com/bartek-kachnic123/oop/commit/2cc75c5dfd97ab29708332807fad0ac0e66f194c)
+
+:white_check_mark: 4.0  Należy stworzyć klasę proxy, która pobierze dane z serwisu
+zewnętrznego podczas zapytania do naszego kontrolera [Link do commita 3](https://github.com/bartek-kachnic123/oop/commit/4f705b683fb17b6c58dcff09502ce105b5d2eb2d)
+
+:white_check_mark: 4.5  Należy zapisać pobrane dane z zewnątrz do bazy danych [Link do commita 4](https://github.com/bartek-kachnic123/oop/commit/ada30ca78fb8e30a73ca6aceea9b4f689c10d9a1)
+
+Kod: [Link do zadania 4](https://github.com/bartek-kachnic123/oop/tree/main/structural_patterns)
+
+
+https://github.com/bartek-kachnic123/oop/blob/main/assets/structural_patterns.zip
+
