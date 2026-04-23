@@ -40,10 +40,10 @@ func (p WeatherProxy) GetWeather(city string) (WeatherDTO, error) {
 
 	var weather OpenMeteoResponse
 	json.Unmarshal(body, &weather)
-
+	
 	return WeatherDTO{
 		City:        city,
-		Temperature: weather.Current.Temperature,
+		Temp: weather.Current.Temperature,
 		Lat:         lat,
 		Lon:         lon,
 	}, nil

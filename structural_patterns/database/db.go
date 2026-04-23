@@ -3,7 +3,7 @@ package database
 import (
 	"time"
 
-	"weather-app/weather"
+	"weather-app/weather/model"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
@@ -11,7 +11,7 @@ import (
 
 var DB *gorm.DB
 
-var seedDataList = []weather.Weather{
+var seedDataList = []model.Weather{
 	{
 		City:       "Krakow",
 		Temp:       10.5,
@@ -35,12 +35,12 @@ func InitDB() {
 		panic("failed to connect database")
 	}
 
-	DB.AutoMigrate(&weather.Weather{})
+	DB.AutoMigrate(&model.Weather{})
 }
 
 func SeedData() {
 	var count int64
-	DB.Model(&weather.Weather{}).Count(&count)
+	DB.Model(&model.Weather{}).Count(&count)
 
 	if count == 0 {
 		for _, w := range seedDataList {
