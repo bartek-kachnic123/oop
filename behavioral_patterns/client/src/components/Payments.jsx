@@ -1,33 +1,29 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 import config from '../config';
 
 function Payments() {
-  const [amount, setAmount] = useState('');
+  const { cart, clearCart } = useContext(CartContext);
+
+  const totalAmount = cart.reduce((sum, item) => sum + item.price, 0);
 
   const handlePayment = async () => {
-    if (!amount) return;
+    if (!cart.length) return;
 
     const payment = {
-      amount,
+      amount: totalAmount,
       date: new Date(),
     };
 
     try {
-      const response = await fetch(`${config.API_URL}/payments`, {
+      await fetch(`${config.API_URL}/payments`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payment),
       });
 
-      const data = await response.json();
-
-      console.log(data);
-
       alert('Płatność wysłana');
-
-      setAmount('');
+      clearCart();
     } catch (error) {
       console.error(error);
       alert('Błąd płatności');
@@ -35,36 +31,12 @@ function Payments() {
   };
 
   return (
-    <div
-      style={{
-        width: "300px",
-        margin: "40px auto",
-        display: "flex",
-        flexDirection: "column",
-        gap: "10px",
-      }}
-    >
+    <div style={{ width: "300px", margin: "40px auto" }}>
       <h2>Płatności</h2>
 
-      <input
-        type="number"
-        placeholder="Kwota"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-        style={{
-          padding: "10px",
-          fontSize: "16px",
-        }}
-      />
+      <p>Do zapłaty: {totalAmount} zł</p>
 
-      <button
-        onClick={handlePayment}
-        style={{
-          padding: "10px",
-          fontSize: "16px",
-          cursor: "pointer",
-        }}
-      >
+      <button onClick={handlePayment}>
         Zapłać
       </button>
     </div>
