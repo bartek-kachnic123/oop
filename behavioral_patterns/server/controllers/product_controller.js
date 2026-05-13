@@ -1,7 +1,7 @@
 const products = [
-  { id: 1, name: "Laptop", price: 3000 },
-  { id: 2, name: "Telefon", price: 2000 },
-  { id: 3, name: "Monitor", price: 1000 },
+  { id: 1, name: 'Komputer', price: 13000 },
+  { id: 2, name: 'Telefon', price: 2000 },
+  { id: 3, name: 'IPHONE', price: 10000 },
 ];
 
 export const getProducts = (req, res) => {

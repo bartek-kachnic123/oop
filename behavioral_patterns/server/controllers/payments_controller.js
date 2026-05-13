@@ -1,10 +1,10 @@
 export const createPayment = (req, res) => {
   const paymentData = req.body;
 
-  console.log("Otrzymana płatność:", paymentData);
+  console.log('Otrzymana płatność:', paymentData);
 
   res.json({
-    message: "Płatność przyjęta",
+    message: 'Płatność przyjęta',
     data: paymentData,
   });
 };

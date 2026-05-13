@@ -1,16 +1,16 @@
-import express from "express";
-import cors from "cors";
+import express from 'express';
+import cors from 'cors';
 
-import * as productsController from "./controllers/product_controller.js";
-import * as paymentsController from "./controllers/payments_controller.js";
+import * as productsController from './controllers/product_controller.js';
+import * as paymentsController from './controllers/payments_controller.js';
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/products", productsController.getProducts);
-app.post("/payments", paymentsController.createPayment);
+app.get('/products', productsController.getProducts);
+app.post('/payments', paymentsController.createPayment);
 
 const PORT = 5000;
 

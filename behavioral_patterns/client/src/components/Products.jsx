@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import config from "../config";
+import { useEffect, useState } from 'react';
+import config from '../config';
 
 function Products() {
   const [products, setProducts] = useState([]);

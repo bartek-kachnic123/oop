@@ -1,8 +1,8 @@
-import { useState } from "react";
-import config from "../config";
+import { useState } from 'react';
+import config from '../config';
 
 function Payments() {
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState('');
 
   const handlePayment = async () => {
     if (!amount) return;
@@ -14,9 +14,9 @@ function Payments() {
 
     try {
       const response = await fetch(`${config.API_URL}/payments`, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(payment),
       });
@@ -25,12 +25,12 @@ function Payments() {
 
       console.log(data);
 
-      alert("Płatność wysłana");
+      alert('Płatność wysłana');
 
-      setAmount("");
+      setAmount('');
     } catch (error) {
       console.error(error);
-      alert("Błąd płatności");
+      alert('Błąd płatności');
     }
   };
 

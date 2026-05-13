@@ -1,8 +1,8 @@
-import { Routes, Route, Link } from "react-router";
+import { Routes, Route, Link } from 'react-router';
 
-import Products from "./components/Products";
-import Payments from "./components/Payments";
-import Cart from "./components/Cart";
+import Products from './components/Products';
+import Payments from './components/Payments';
+import Cart from './components/Cart';
 
 function App() {
   return (
