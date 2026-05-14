@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from 'react';
-import config from '../config';
+import api from '../api';
 import { CartContext } from '../context/CartContext';
 
 function Products() {
@@ -7,10 +7,16 @@ function Products() {
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch(`${config.API_URL}/products`)
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error(err));
+    const fetchProducts = async () => {
+      try {
+        const res = await api.get('/products');
+        setProducts(res.data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    fetchProducts();
   }, []);
 
   return (
@@ -18,7 +24,10 @@ function Products() {
       <h2>Produkty</h2>
 
       {products.map((product) => (
-        <div key={product.id} style={{ border: "1px solid #ccc", padding: 10 }}>
+        <div
+          key={product.id}
+          style={{ border: "1px solid #ccc", padding: 10 }}
+        >
           <p>{product.name}</p>
           <p>{product.price} zł</p>
 

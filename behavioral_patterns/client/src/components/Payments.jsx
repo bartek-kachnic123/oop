@@ -1,6 +1,6 @@
 import { useContext } from 'react';
+import api from '../api';
 import { CartContext } from '../context/CartContext';
-import config from '../config';
 
 function Payments() {
   const { cart, clearCart } = useContext(CartContext);
@@ -16,11 +16,7 @@ function Payments() {
     };
 
     try {
-      await fetch(`${config.API_URL}/payments`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payment),
-      });
+      await api.post('/payments', payment);
 
       alert('Płatność wysłana');
       clearCart();
