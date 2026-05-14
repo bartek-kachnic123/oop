@@ -71,3 +71,32 @@ Kod: [Link do zadania 4](https://github.com/bartek-kachnic123/oop/tree/main/stru
 
 https://github.com/bartek-kachnic123/oop/blob/main/assets/structural_patterns.zip
 
+
+**Zadanie 5** Wzorce behawioralne React (JavaScript/Typescript)
+
+:white_check_mark: W ramach projektu należy stworzyć komponenty Produkty oraz
+Płatności; komponent Produkty powinien pobierać listę produktów z
+aplikacji serwerowej, natomiast komponent Płatności powinien wysyłać
+dane płatności do aplikacji serwerowej. [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/99223b7c47393e583ead581d691a1368ad7e0391)
+
+:white_check_mark:  Należy dodać komponent Koszyk wraz z osobnym widokiem; aplikacja
+powinna umożliwiać przechodzenie pomiędzy widokami przy użyciu
+routingu. [Link do commita2 ](https://github.com/bartek-kachnic123/oop/commit/679f2c5c0a81efed48115ebd61b7472f82fc2cc2)
+
+:white_check_mark: 4.0  Dane pomiędzy komponentami, takimi jak Produkty, Koszyk i
+Płatności, powinny być przekazywane z wykorzystaniem React hooks, np.
+useState, useEffect lub useContext. [Link do commita 3](https://github.com/bartek-kachnic123/oop/commit/73229cedea6fb6e103e8ee1ac636cab64e59bfc6)
+
+:white_check_mark: 4.5  Należy przygotować konfigurację umożliwiającą uruchomienie
+aplikacji klienckiej oraz serwerowej w kontenerach Docker za pomocą
+docker-compose [Link do commita 4](https://github.com/bartek-kachnic123/oop/commit/0a767c5ff8f681cc3eab8511a4c07de1fefa5161)
+
+:white_check_mark: 5.0 Należy wykorzystać bibliotekę axios do komunikacji z serwerem oraz
+skonfigurować obsługę CORS, aby frontend mógł poprawnie komunikować
+się z backendem. [Link do commita 5](https://github.com/bartek-kachnic123/oop/commit/6da94a67c74d1612c1b4ab01463ce92e0650cc9f)
+
+Kod: [Link do zadania 5](https://github.com/bartek-kachnic123/oop/tree/main/behavioral_patterns)
+
+
+https://github.com/bartek-kachnic123/oop/blob/main/assets/behavioral_patterns.zip
+
