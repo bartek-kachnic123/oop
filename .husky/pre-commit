@@ -1,0 +1,2 @@
+cd behavioral_patterns/client && npx lint-staged
+
