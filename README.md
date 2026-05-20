@@ -100,3 +100,11 @@ Kod: [Link do zadania 5](https://github.com/bartek-kachnic123/oop/tree/main/beha
 
 https://github.com/bartek-kachnic123/oop/blob/main/assets/behavioral_patterns.zip
 
+
+**Zadanie 6** Zapaszki
+
+:white_check_mark: Należy skonfigurować husky + lint-staged uruchamianie lintowania
+przed commitem [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/ac6ef72fcaf321410f9a4e20fd74b312d0493c73)
+
+Kod: [Link do zadania 6](https://github.com/bartek-kachnic123/oop/tree/main/behavioral_patterns/client)
+
