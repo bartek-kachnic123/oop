@@ -103,8 +103,11 @@ https://github.com/bartek-kachnic123/oop/blob/main/assets/behavioral_patterns.zi
 
 **Zadanie 6** Zapaszki
 
-:white_check_mark: Należy skonfigurować husky + lint-staged uruchamianie lintowania
+:white_check_mark: 3.0 Należy skonfigurować husky + lint-staged uruchamianie lintowania
 przed commitem [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/ac6ef72fcaf321410f9a4e20fd74b312d0493c73)
+
+:white_check_mark: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji klienckiej) [Link do commita 2](https://github.com/bartek-kachnic123/oop/commit/9d798a43162256da97d04a0147089e7a2ea1a2a6)
 
 Kod: [Link do zadania 6](https://github.com/bartek-kachnic123/oop/tree/main/behavioral_patterns/client)
 
