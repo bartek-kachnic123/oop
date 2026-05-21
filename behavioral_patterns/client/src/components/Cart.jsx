@@ -11,8 +11,8 @@ function Cart() {
       {cart.length === 0 ? (
         <p>Twój koszyk jest pusty</p>
       ) : (
-        cart.map((item, index) => (
-          <div key={index}>
+        cart.map((item) => (
+          <div key={item.id}>
             <p>{item.name}</p>
             <p>{item.price} zł</p>
           </div>
