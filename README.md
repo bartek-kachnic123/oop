@@ -111,3 +111,15 @@ aplikacji klienckiej) [Link do commita 2](https://github.com/bartek-kachnic123/o
 
 Kod: [Link do zadania 6](https://github.com/bartek-kachnic123/oop/tree/main/behavioral_patterns/client)
 
+
+**Zadanie 7** Vapor (Swift)
+
+:white_check_mark: 3.0 Należy stworzyć kontroler wraz z modele Produktów zgodny z CRUD w
+ORM Fluent [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/1ca3a720577384c65e442cb9c40b2e47f4466e3c)
+
+:white_check_mark: 3.5 Należy stworzyć szablony w Leaf [Link do commita 2](https://github.com/bartek-kachnic123/oop/commit/28085a8ec8c17bbc8a445ed17a7de1b1ce506ff5)
+
+Kod: [Link do zadania 7](https://github.com/bartek-kachnic123/oop/tree/main/ecommerce)
+
+https://github.com/bartek-kachnic123/oop/blob/main/assets/ecommerce.zip
+
