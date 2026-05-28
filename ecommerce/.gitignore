@@ -1,0 +1,20 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Database
+*.sqlite
+*.db
+db.sqlite
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+DerivedData/
+
+# System
+.DS_Store
+*.swp
+*.swo
+
