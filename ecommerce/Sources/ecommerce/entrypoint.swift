@@ -12,10 +12,13 @@ enum Entrypoint {
         do {
             app.databases.use(.sqlite(.file("db.sqlite")), as: .sqlite)
             app.migrations.add(CreateProduct())
+            app.migrations.add(CreateAttribute())
+            app.migrations.add(CreateCategory())
             try await app.autoMigrate()
 
             app.views.use(.leaf)
             try app.register(collection: ProductController())
+            try app.register(collection: CategoryController())
 
             app.get { req in
                 "Ecommerce API"

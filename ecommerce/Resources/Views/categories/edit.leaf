@@ -1,0 +1,15 @@
+<h1>Edit Category</h1>
+
+<form method="POST" action="/categories/#(category.id)/edit">
+
+    <input name="name" value="#(category.name)" />
+
+    <button type="submit">Update</button>
+</form>
+
+<form method="POST" action="/categories/#(category.id)/delete">
+    <button type="submit">Delete</button>
+</form>
+
+<a href="/categories">Back</a>
+

@@ -1,0 +1,28 @@
+<h1>Create Category</h1>
+
+<form method="POST" action="/categories">
+
+    <input name="name" placeholder="Category name" />
+
+    <div id="attributes">
+        <input name="attributes[]" placeholder="Attribute" />
+    </div>
+
+    <button type="button" onclick="addAttr()">Add attribute</button>
+    <button type="submit">Create</button>
+</form>
+
+<a href="/categories">Back</a>
+
+<script>
+function addAttr() {
+    const div = document.getElementById("attributes")
+
+    const input = document.createElement("input")
+    input.name = "attributes[]"
+    input.placeholder = "Attribute"
+
+    div.appendChild(input)
+}
+</script>
+

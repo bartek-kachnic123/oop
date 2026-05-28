@@ -1,0 +1,13 @@
+<h1>#(category.name)</h1>
+
+<h2>Attributes</h2>
+
+<ul>
+#for(attribute in category.attributes):
+    <li>#(attribute.name)</li>
+#endfor
+</ul>
+
+<a href="/categories/#(category.id)/edit">Edit</a>
+<a href="/categories">Back</a>
+
