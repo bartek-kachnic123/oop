@@ -119,6 +119,9 @@ ORM Fluent [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/1
 
 :white_check_mark: 3.5 Należy stworzyć szablony w Leaf [Link do commita 2](https://github.com/bartek-kachnic123/oop/commit/28085a8ec8c17bbc8a445ed17a7de1b1ce506ff5)
 
+:white_check_mark: 4.0  Należy stworzyć drugi model oraz kontroler Kategorii wraz z
+relacją [Link do commita 3](https://github.com/bartek-kachnic123/oop/commit/398508387c7736f872fae1568f6903ddaec33203)
+
 Kod: [Link do zadania 7](https://github.com/bartek-kachnic123/oop/tree/main/ecommerce)
 
 https://github.com/bartek-kachnic123/oop/blob/main/assets/ecommerce.zip
