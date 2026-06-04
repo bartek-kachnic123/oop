@@ -132,6 +132,7 @@ https://github.com/bartek-kachnic123/oop/blob/main/assets/ecommerce.zip
 :white_check_mark: 3.0  Przetestuj formularz rejestracji użytkownika pod kątem walidacji
 pól obowiązkowych oraz zachowania aplikacji po wprowadzeniu
 niepoprawnego formatu adresu e-mail. [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/4965463e3f52b3f344cf7d5eb6a7654dd1498ddb)
+
 :white_check_mark: 3.5 Przeprowadź testy bezpieczeństwa typu Cross-Site Scripting (XSS),
 próbując wstrzyknąć złośliwy kod JavaScript w aplikacji z Reactem [Link do commita 2](https://github.com/bartek-kachnic123/oop/commit/c3a183c9513174173a981cb8e0c49d8d1ea31759)
 
