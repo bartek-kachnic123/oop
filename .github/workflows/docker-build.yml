@@ -1,0 +1,49 @@
+name: Build and Push Docker Images
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  push:
+    branches:
+      - main
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    environment: Production
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build client
+        run: |
+          docker build \
+            --build-arg VITE_API_URL=https://my-server-latest-1-wiyg.onrender.com \
+            -f behavioral_patterns/client/Dockerfile.prod \
+            -t ${{ secrets.DOCKER_USERNAME }}/client:latest \
+            behavioral_patterns/client
+
+      - name: Push client
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/client:latest
+
+      - name: Build server
+        run: |
+          docker build \
+            -f behavioral_patterns/server/Dockerfile \
+            -t ${{ secrets.DOCKER_USERNAME }}/my-server:latest \
+            behavioral_patterns/server
+
+      - name: Push server
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/my-server:latest
+
