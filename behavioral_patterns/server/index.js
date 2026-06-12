@@ -1,12 +1,15 @@
 import express from 'express';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 import * as productsController from './controllers/product_controller.js';
 import * as paymentsController from './controllers/payments_controller.js';
 
 const app = express();
 
-app.use(cors({ origin: ['http://localhost:5173'] }));
+app.use(cors({ origin: ['http://localhost:5173', process.env.CLIENT_URL] }));
 app.use(express.json());
 
 app.get('/products', productsController.getProducts);
