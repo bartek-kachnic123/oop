@@ -140,3 +140,20 @@ Kod: [Link do zadania 8](https://github.com/bartek-kachnic123/oop/tree/main/test
 
 https://github.com/bartek-kachnic123/oop/blob/main/assets/tests.zip
 
+
+**Zadanie 9** Chmura
+
+:white_check_mark: 3.0  Należy stworzyć odpowiednie instancje po stronie chmury na
+dockerze [Link do commita 1](https://github.com/bartek-kachnic123/oop/commit/c1a8fb0f427c5a0f4d247595bf9b218fee35e75b)
+
+:white_check_mark: 3.5  Stworzyć odpowiedni pipeline w Github Actions do budowania
+aplikacji [Link do commita 2](https://github.com/bartek-kachnic123/oop/commit/97f8730c0ca26d6fb6d5cbe079e8423633cd3f0b)
+
+Kod: [Link do zadania 9](https://github.com/bartek-kachnic123/oop/tree/main/behavioral_patterns)
+
+https://github.com/bartek-kachnic123/oop/blob/main/assets/cloud.zip
+
+Client: https://client-latest-3.onrender.com
+Server: https://my-server-latest-1-wiyg.onrender.com/products
+
+
